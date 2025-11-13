@@ -1,0 +1,95 @@
+/* Forte Visions — minimal, elegant portfolio */
+:root {
+  --bg: #0f0f0f;
+  --text: #f5f5f5;
+  --muted: #bdbdbd;
+  --accent: #ffffff;
+  --accent2: #c6a969; /* subtle gold */
+  --card: #161616;
+  --border: #242424;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a { color: var(--text); text-decoration: none; }
+a:hover { opacity: .85; }
+
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+.site-header {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(15,15,15,.7);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--border);
+}
+.nav { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 16px; }
+.brand { font-weight: 700; letter-spacing: .5px; }
+nav a { margin-left: 14px; font-size: 15px; color: var(--muted); }
+nav a.insta { color: var(--text); border: 1px solid var(--border); padding: 6px 10px; border-radius: 999px; }
+
+.hero { position: relative; height: min(72vh, 720px); display: grid; place-items: center; overflow: clip; }
+.hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: brightness(.55); }
+.overlay { position: absolute; inset: 0; background: linear-gradient(0deg, rgba(15,15,15,.7), rgba(15,15,15,.4)); }
+.hero-inner { position: relative; text-align: center; }
+.hero h1 { font-size: clamp(40px, 8vw, 80px); margin: 0 0 10px; letter-spacing: 1px; }
+.hero p { color: var(--muted); margin: 0 0 24px; font-size: 18px; }
+.cta { display: inline-block; padding: 12px 18px; background: var(--text); color: var(--bg); border-radius: 999px; font-weight: 600; }
+
+.section { padding: 72px 0; }
+.section-alt { background: var(--card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.section-header h2 { margin: 0 0 4px; font-size: 28px; }
+.section-header p { margin: 0; color: var(--muted); }
+
+.grid { margin-top: 24px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.tile { display: block; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); background: #111; }
+.tile img { display: block; width: 100%; height: 260px; object-fit: cover; transition: transform .35s ease; }
+.tile:hover img { transform: scale(1.03) }
+
+.about { display: grid; grid-template-columns: 1.2fr .8fr; gap: 32px; align-items: center; }
+.about-copy p { margin: 6px 0 12px; color: var(--muted); }
+.badges { list-style: none; padding: 0; display: flex; gap: 8px; flex-wrap: wrap; }
+.badges li { border: 1px solid var(--border); padding: 6px 10px; border-radius: 999px; color: var(--muted); }
+.about-photo img { width: 100%; border-radius: 16px; border: 1px solid var(--border); }
+
+.contact-form { margin-top: 18px; display: grid; gap: 12px; }
+.contact-form .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+label { display: grid; gap: 6px; font-size: 14px; color: var(--muted); }
+input, textarea {
+  width: 100%; padding: 12px 14px; border-radius: 10px; background: #121212;
+  border: 1px solid var(--border); color: var(--text); font-size: 16px;
+}
+button { padding: 12px 16px; border-radius: 10px; border: 1px solid var(--border); background: #fff; color: #000; font-weight: 700; }
+.privacy { color: var(--muted); font-size: 12px; }
+
+.site-footer { border-top: 1px solid var(--border); }
+.footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 64px; }
+.footer-inner a { color: var(--muted); }
+
+.lightbox.hidden { display: none; }
+.lightbox {
+  position: fixed; inset: 0; background: rgba(0,0,0,.9);
+  display: grid; place-items: center; z-index: 50;
+}
+.lightbox img { max-width: min(92vw, 1600px); max-height: 80vh; border-radius: 10px; }
+.lightbox-close {
+  position: absolute; top: 16px; right: 16px; font-size: 32px; border: none; background: transparent; color: #fff; cursor: pointer;
+}
+
+.u-underline { border-bottom: 2px solid var(--accent2); }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+  .about { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .grid { grid-template-columns: 1fr; }
+  .nav { height: auto; padding: 12px 0; flex-wrap: wrap; }
+}

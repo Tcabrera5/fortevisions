@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Forte Visions | Photography by Marissa Forte</title>
+  <meta name="description" content="Forte Visions — Photography by Marissa Forte. Portraits, couples, events, and editorial imagery." />
+  <link rel="canonical" href="https://www.fortevisions.com/" />
+  <meta name="theme-color" content="#0f0f0f" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Forte Visions | Photography by Marissa Forte">
+  <meta property="og:description" content="Portraits, couples, events, and editorial imagery.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.fortevisions.com/">
+  <meta property="og:image" content="https://www.fortevisions.com/assets/icons/cover.jpg">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Forte Visions | Photography by Marissa Forte">
+  <meta name="twitter:description" content="Portraits, couples, events, and editorial imagery.">
+  <meta name="twitter:image" content="https://www.fortevisions.com/assets/icons/cover.jpg">
+  <link rel="icon" href="/assets/icons/favicon.ico">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="/" class="brand">Forte Visions</a>
+      <nav>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="insta" target="_blank" rel="noopener" href="https://instagram.com/fortevisions">Instagram ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="overlay"></div>
+      <div class="hero-inner container">
+        <h1>Forte Visions</h1>
+        <p>Photography by <strong>Marissa&nbsp;Forte</strong></p>
+        <a class="cta" href="#contact">Book a session</a>
+      </div>
+      <!-- Change the image below with one of your photos (1920×1080+ recommended) -->
+      <img class="hero-bg" src="/assets/photos/hero-placeholder.jpg" alt="Forte Visions hero background" />
+    </section>
+
+    <section id="portfolio" class="section container">
+      <div class="section-header">
+        <h2>Portfolio</h2>
+        <p>Selections from recent sessions — portraits, couples, and events.</p>
+      </div>
+      <div class="grid" id="gallery">
+        <!-- Drop photos into /assets/photos and list them below -->
+        <!-- Example items included; replace with your own -->
+        <a href="/assets/photos/sample-1.jpg" class="tile"><img src="/assets/photos/sample-1.jpg" alt="Sample 1"></a>
+        <a href="/assets/photos/sample-2.jpg" class="tile"><img src="/assets/photos/sample-2.jpg" alt="Sample 2"></a>
+        <a href="/assets/photos/sample-3.jpg" class="tile"><img src="/assets/photos/sample-3.jpg" alt="Sample 3"></a>
+        <a href="/assets/photos/sample-4.jpg" class="tile"><img src="/assets/photos/sample-4.jpg" alt="Sample 4"></a>
+        <a href="/assets/photos/sample-5.jpg" class="tile"><img src="/assets/photos/sample-5.jpg" alt="Sample 5"></a>
+        <a href="/assets/photos/sample-6.jpg" class="tile"><img src="/assets/photos/sample-6.jpg" alt="Sample 6"></a>
+      </div>
+    </section>
+
+    <section id="about" class="section section-alt">
+      <div class="container about">
+        <div class="about-copy">
+          <h2>About Marissa</h2>
+          <p>Hi, I’m Marissa Forte — photographer and founder of <em>Forte Visions</em>. I capture honest, cinematic moments for people and brands in love with light. Whether it’s a portrait session, a couples shoot, an intimate event, or editorial work, I focus on storytelling and effortless direction.</p>
+          <p>Based in <span class="u-underline">[your city]</span>, available for travel.</p>
+          <ul class="badges">
+            <li>Portraits</li>
+            <li>Couples</li>
+            <li>Events</li>
+            <li>Editorial</li>
+          </ul>
+        </div>
+        <figure class="about-photo">
+          <img src="/assets/photos/about-placeholder.jpg" alt="Marissa Forte">
+          <figcaption>Photography by Forte Visions</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <div class="section-header">
+        <h2>Contact</h2>
+        <p>Inquire for availability, rates, and packages. Expect a reply within 24–48 hours.</p>
+      </div>
+      <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+        <div class="row">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required>
+          </label>
+        </div>
+        <label>
+          <span>Instagram (optional)</span>
+          <input type="text" name="instagram" placeholder="@fortevisions">
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+        <button type="submit">Send Inquiry</button>
+        <p class="privacy">By submitting, you agree to be contacted about your inquiry. No spam—ever.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Forte Visions · Photography by Marissa Forte</div>
+      <div class="links">
+        <a href="mailto:hello@fortevisions.com">hello@fortevisions.com</a>
+        <a href="https://instagram.com/fortevisions" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="lightbox" class="lightbox hidden">
+    <button class="lightbox-close" aria-label="Close">×</button>
+    <img id="lightbox-img" alt="Expanded">
+  </div>
+
+  <script src="/assets/site.js"></script>
+</body>
+</html>
