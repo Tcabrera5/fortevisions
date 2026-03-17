@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Travel placeholder</title>
+  <desc id="desc">Placeholder graphic for travel and places photography images.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#8da6bb"/>
+      <stop offset="100%" stop-color="#385671"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <rect y="650" width="800" height="350" fill="rgba(0,0,0,0.14)"/>
+  <path d="M0 690 L160 510 L320 650 L470 430 L650 690 Z" fill="rgba(255,255,255,0.25)"/>
+  <path d="M220 690 L420 470 L610 690 Z" fill="rgba(255,255,255,0.35)"/>
+  <circle cx="600" cy="220" r="68" fill="rgba(255,255,255,0.55)"/>
+  <text x="400" y="820" text-anchor="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="700">Add travel photo here</text>
+  <text x="400" y="872" text-anchor="middle" fill="rgba(255,255,255,0.82)" font-family="Arial, Helvetica, sans-serif" font-size="22">Landscapes • destinations • atmosphere</text>
+</svg>
